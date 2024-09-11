@@ -5,8 +5,9 @@ while True:
 2.view the institution 
 3.update the institution 
 4.delet the institution
-5.add 
-6.exit''')
+5.search
+6.add 
+7.exit''')
     choice=int(input("enter the number :"))
     if choice==1:
           pname=str(input("enter name :"))
@@ -31,19 +32,19 @@ while True:
                          choice=int(input("enter your choice :"))
                          if choice==1:
                                pname=str(input("enter name :"))
-                               i['pname']=name
+                               i['pname']=pname
                          elif choice==2:
                                course=str(input("enter course :"))
                                i['course']=course
                          elif choice==3:
                                time=int(input("enter time :"))
                                i['time']=time
-                         elif choice==2:
+                         elif choice==4:
                                fees=int(input("enter fees :"))
                                i['fees']=fees
                                f=1
-             if f==0:
-                   print('invalid name') 
+                               if f==0:
+                                    print('invalid name') 
     elif choice==4:
            id=int(input("enter id :"))
            f=0
