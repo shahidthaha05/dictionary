@@ -6,8 +6,7 @@ while True:
 3.update the institution 
 4.delet the institution
 5.search
-6.add 
-7.exit''')
+6.exit''')
     choice=int(input("enter the number :"))
     if choice==1:
           pname=str(input("enter name :"))
@@ -15,7 +14,7 @@ while True:
           coures=str(input("enter course :"))
           time=int(input("enter time :"))
           fees=int(input("enter fees :"))
-          shop.append({'pname':name,'id':id,'course':course,'time':time,'fees':fees})
+          inst.append({'pname':name,'id':id,'course':course,'time':time,'fees':fees})
     elif choice==2:
          for i in inst:
               print(i)
